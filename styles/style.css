@@ -9,7 +9,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    width: 1440px;
+    width: 1520px;
     height: 3750px;
 }
 nav{
@@ -19,14 +19,13 @@ nav{
     justify-content: space-between;
     padding-top: 42px;
     background-color: #2D25A0;
-    padding-right: 124px;
-    width: 1316px;
-    
+    padding-right: 124px; 
 }
 .menus{
     padding-left: 156px;
 }
 .menus a{
+
     text-decoration: none;
     padding-right: 36px;
     font-weight: 500;
@@ -57,7 +56,7 @@ padding: 10px 24px;
 .top-container{
     display: flex;
     background-color:#2D25A0;
-    width: 1440px;
+    width: 1520px;
     height: 677px; 
 }
 .top-heading{
@@ -95,7 +94,7 @@ padding: 10px 24px;
     grid-column-gap: 30px;
     grid-row-gap: 27px;
     margin-left: 180px;
-    margin-right: 210px;
+    margin-right: 200px;
     margin-top: 70px;
 }
 .blog{
@@ -194,3 +193,80 @@ padding: 10px 24px;
      margin: 0;
      margin-bottom: 79px;
  }
+ /*------------------
+     Media Queries 
+------------------------*/
+
+@media only screen and (max-width:688px) {
+   
+
+    .top-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 360px;
+        height: 695px;
+    }
+    .top-heading{
+        padding:112px 66px 30px 16px;
+    }
+    .top-heading h1{
+        font-size: 36px;
+        width: 278px;
+        height: 138px;
+        padding-bottom: 30px;
+        line-height: 50px;   
+    }
+    .top-banner img{
+        width: 329px;
+        height:259px;
+        padding: 50px 16px 61px 16px;
+    }
+    /*--------------------
+             blogs 
+    ----------------------*/
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+        margin-left: 15px;
+    }
+    /*------------------
+        All Highlight 
+    -------------------*/
+    .highlight{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .highlight-info{
+        width: 329px;
+        height: 299px;
+        padding: 60px 16px 29px 15px;
+    }
+    .highlight-info h2{
+        width: 292px;
+        height: 80px;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0;
+    }
+    .highlight-image img{
+        width: 328px;
+        height: 248px;
+        padding: 29px 16px 55px 16px;
+    }
+     /*------------------
+         footer 
+     --------------------*/
+     footer{
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+        padding: 0 80px;
+     }
+     .footer-image img{
+        width: 125px;
+        height: 30px;
+        padding-left: 50px;
+     }
+    
+    
+}
