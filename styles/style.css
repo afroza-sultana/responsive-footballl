@@ -198,8 +198,18 @@ padding: 10px 24px;
 ------------------------*/
 
 @media only screen and (max-width:688px) {
-   
+    body{
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        width: 0px;
+        height: 0px;
+    }
+    nav{
+        position: absolute;
+         visibility: hidden;
+    }
 
+/* conmebol copa America */
     .top-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -260,13 +270,27 @@ padding: 10px 24px;
      footer{
          display: grid;
          grid-template-columns: repeat(1, 1fr);
-        padding: 0 80px;
+        padding-left: 100px;
      }
      .footer-image img{
         width: 125px;
         height: 30px;
-        padding-left: 50px;
+        padding-left: 200px;
      }
     
+    .social-icon{
+        margin: 20px 0;
+        margin-left: 150px;
+        padding-right: 0;
+    }
+    .social-icon img{ 
+       margin-left: 1px;
+    }
+    .copyright {
+      margin-left: 200px;   
+    }
+    .copyright p{
+        margin-bottom: 10px;
+    }
     
 }
